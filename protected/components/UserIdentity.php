@@ -1,0 +1,47 @@
+<?php
+    /**
+     * File : protected/components/UserIdentity.php
+     */
+class UserIdentity extends CUserIdentity
+{
+    private $_id;
+    
+    public function authenticate()
+    {
+        $username=strtolower($this->username);
+        $user=Users::model()->find('LOWER(username)=?',array($username));
+        
+        if($user===null){
+        	$user=Users::model()->find('LOWER(email)=?',array($username));
+        }
+
+        if($user===null){
+            $this->errorCode=self::ERROR_USERNAME_INVALID;
+        } else if(!$user->validatePassword($this->password)){
+            $this->errorCode=self::ERROR_PASSWORD_INVALID;
+        } else {
+            $this->_id=$user->id;
+            $this->username=$user->username;
+            $this->errorCode=self::ERROR_NONE;
+
+            //Update Last login
+            $date=date("Y-m-d H:i:s");
+
+            //$ip_address=$_SERVER['REMOTE_ADDR'];
+            //Users::model()->updateByPk(array($this->_id),array('ip_address'=>$ip_address));   
+             
+            Users::model()->updateByPk(array($this->_id),array('last_login'=>$date));
+            Users::model()->updateCounters(array('count_login'=>+1),'id=:id',array(':id'=>$this->_id));
+        }
+        return $this->errorCode==self::ERROR_NONE;
+
+        
+    }
+    
+    public function getId()
+    {
+        return $this->_id;
+    }
+
+
+}

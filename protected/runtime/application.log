@@ -1,0 +1,348 @@
+2014/03/21 12:12:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "index-test.php".' in /Applications/MAMP/htdocs/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/framework/web/CWebApplication.php(141): CWebApplication->runController('index-test.php')
+#1 /Applications/MAMP/htdocs/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webapp/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/webapp/index-test.php
+---
+2014/03/21 12:23:39 [error] [exception.CException] exception 'CException' with message 'Property "Sorter.dataProvider" is not defined.' in /Applications/MAMP/htdocs/framework/base/CComponent.php:173
+Stack trace:
+#0 /Applications/MAMP/htdocs/webapp/protected/extensions/tablesorter/Sorter.php(41): CComponent->__set('dataProvider', Object(CActiveDataProvider))
+#1 /Applications/MAMP/htdocs/framework/web/CWidgetFactory.php(161): Sorter->__set('dataProvider', Object(CActiveDataProvider))
+#2 /Applications/MAMP/htdocs/framework/web/CBaseController.php(146): CWidgetFactory->createWidget(Object(TranslateController), 'application.ext...', Array)
+#3 /Applications/MAMP/htdocs/framework/web/CBaseController.php(172): CBaseController->createWidget('application.ext...', Array)
+#4 /Applications/MAMP/htdocs/webapp/protected/views/translate/admin.php(56): CBaseController->widget('application.ext...', Array)
+#5 /Applications/MAMP/htdocs/framework/web/CBaseController.php(126): require('/Applications/M...')
+#6 /Applications/MAMP/htdocs/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Applications/M...', Array, true)
+#7 /Applications/MAMP/htdocs/framework/web/CController.php(869): CBaseController->renderFile('/Applications/M...', Array, true)
+#8 /Applications/MAMP/htdocs/framework/web/CController.php(782): CController->renderPartial('admin', Array, true)
+#9 /Applications/MAMP/htdocs/webapp/protected/controllers/TranslateController.php(143): CController->render('admin', Array)
+#10 /Applications/MAMP/htdocs/framework/web/actions/CInlineAction.php(49): TranslateController->actionAdmin()
+#11 /Applications/MAMP/htdocs/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#12 /Applications/MAMP/htdocs/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#13 /Applications/MAMP/htdocs/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#14 /Applications/MAMP/htdocs/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#15 /Applications/MAMP/htdocs/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#16 /Applications/MAMP/htdocs/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#17 /Applications/MAMP/htdocs/framework/web/CController.php(291): CFilterChain->run()
+#18 /Applications/MAMP/htdocs/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#19 /Applications/MAMP/htdocs/framework/web/CWebApplication.php(282): CController->run('admin')
+#20 /Applications/MAMP/htdocs/framework/web/CWebApplication.php(141): CWebApplication->runController('translate/admin')
+#21 /Applications/MAMP/htdocs/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#22 /Applications/MAMP/htdocs/webapp/index.php(13): CApplication->run()
+#23 {main}
+REQUEST_URI=/webapp/translate/admin
+HTTP_REFERER=http://localhost/webapp/translate/create
+---
+2014/03/21 12:27:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "theme/mosaic".' in /Applications/MAMP/htdocs/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/framework/web/CWebApplication.php(141): CWebApplication->runController('theme/mosaic')
+#1 /Applications/MAMP/htdocs/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webapp/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/webapp/theme/mosaic
+---
+2014/03/21 12:31:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/mosaic/about-us.html".' in /Applications/MAMP/htdocs/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/mosaic/a...')
+#1 /Applications/MAMP/htdocs/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webapp/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/webapp/themes/mosaic/about-us.html
+HTTP_REFERER=http://localhost/webapp/themes/mosaic/
+---
+2014/03/21 12:35:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "theme/mosaic".' in /Applications/MAMP/htdocs/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/framework/web/CWebApplication.php(141): CWebApplication->runController('theme/mosaic')
+#1 /Applications/MAMP/htdocs/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webapp/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/webapp/theme/mosaic
+---
+2014/03/21 12:35:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/mosaic/css/bootstrap-responsive.css".' in /Applications/MAMP/htdocs/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/mosaic/c...')
+#1 /Applications/MAMP/htdocs/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webapp/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/webapp/themes/mosaic/css/bootstrap-responsive.css
+HTTP_REFERER=http://localhost/webapp/theme/mosaic
+---
+2014/03/21 12:35:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/mosaic/css/style.css".' in /Applications/MAMP/htdocs/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/mosaic/c...')
+#1 /Applications/MAMP/htdocs/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webapp/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/webapp/themes/mosaic/css/style.css
+HTTP_REFERER=http://localhost/webapp/theme/mosaic
+---
+2014/03/21 12:35:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "theme/mosaic".' in /Applications/MAMP/htdocs/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/framework/web/CWebApplication.php(141): CWebApplication->runController('theme/mosaic')
+#1 /Applications/MAMP/htdocs/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webapp/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/webapp/theme/mosaic
+---
+2014/03/21 12:35:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/mosaic/css/style.css".' in /Applications/MAMP/htdocs/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/mosaic/c...')
+#1 /Applications/MAMP/htdocs/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webapp/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/webapp/themes/mosaic/css/style.css
+HTTP_REFERER=http://localhost/webapp/theme/mosaic
+---
+2014/03/21 12:35:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/mosaic/css/bootstrap-responsive.css".' in /Applications/MAMP/htdocs/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/mosaic/c...')
+#1 /Applications/MAMP/htdocs/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webapp/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/webapp/themes/mosaic/css/bootstrap-responsive.css
+HTTP_REFERER=http://localhost/webapp/theme/mosaic
+---
+2014/03/21 12:36:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/mosaic/css/style.css".' in /Applications/MAMP/htdocs/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/mosaic/c...')
+#1 /Applications/MAMP/htdocs/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webapp/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/webapp/themes/mosaic/css/style.css
+HTTP_REFERER=http://localhost/webapp/
+---
+2014/03/21 12:36:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/mosaic/css/bootstrap-responsive.css".' in /Applications/MAMP/htdocs/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/mosaic/c...')
+#1 /Applications/MAMP/htdocs/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webapp/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/webapp/themes/mosaic/css/bootstrap-responsive.css
+HTTP_REFERER=http://localhost/webapp/
+---
+2014/03/21 12:39:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/custom.js".' in /Applications/MAMP/htdocs/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/framework/web/CWebApplication.php(141): CWebApplication->runController('js/custom.js')
+#1 /Applications/MAMP/htdocs/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webapp/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/webapp/js/custom.js
+HTTP_REFERER=http://localhost/webapp/
+---
+2014/03/21 12:39:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/imac.png".' in /Applications/MAMP/htdocs/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/framework/web/CWebApplication.php(141): CWebApplication->runController('img/imac.png')
+#1 /Applications/MAMP/htdocs/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webapp/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/webapp/img/imac.png
+HTTP_REFERER=http://localhost/webapp/
+---
+2014/03/21 12:39:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/jquery.sticky.js".' in /Applications/MAMP/htdocs/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/framework/web/CWebApplication.php(141): CWebApplication->runController('js/jquery.stick...')
+#1 /Applications/MAMP/htdocs/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webapp/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/webapp/js/jquery.sticky.js
+HTTP_REFERER=http://localhost/webapp/
+---
+2014/03/21 12:39:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/scrolltopcontrol.js".' in /Applications/MAMP/htdocs/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/framework/web/CWebApplication.php(141): CWebApplication->runController('js/scrolltopcon...')
+#1 /Applications/MAMP/htdocs/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webapp/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/webapp/js/scrolltopcontrol.js
+HTTP_REFERER=http://localhost/webapp/
+---
+2014/03/21 12:39:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/bootstrap.min.js".' in /Applications/MAMP/htdocs/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/framework/web/CWebApplication.php(141): CWebApplication->runController('js/bootstrap.mi...')
+#1 /Applications/MAMP/htdocs/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webapp/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/webapp/js/bootstrap.min.js
+HTTP_REFERER=http://localhost/webapp/
+---
+2014/03/21 12:39:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/browser.png".' in /Applications/MAMP/htdocs/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/framework/web/CWebApplication.php(141): CWebApplication->runController('img/browser.png')
+#1 /Applications/MAMP/htdocs/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webapp/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/webapp/img/browser.png
+HTTP_REFERER=http://localhost/webapp/
+---
+2014/03/21 12:39:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/general-2.jpg".' in /Applications/MAMP/htdocs/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/framework/web/CWebApplication.php(141): CWebApplication->runController('img/general-2.j...')
+#1 /Applications/MAMP/htdocs/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webapp/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/webapp/img/general-2.jpg
+HTTP_REFERER=http://localhost/webapp/
+---
+2014/03/21 12:39:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/general-1.jpg".' in /Applications/MAMP/htdocs/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/framework/web/CWebApplication.php(141): CWebApplication->runController('img/general-1.j...')
+#1 /Applications/MAMP/htdocs/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webapp/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/webapp/img/general-1.jpg
+HTTP_REFERER=http://localhost/webapp/
+---
+2014/03/21 12:39:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/general-3.jpg".' in /Applications/MAMP/htdocs/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/framework/web/CWebApplication.php(141): CWebApplication->runController('img/general-3.j...')
+#1 /Applications/MAMP/htdocs/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webapp/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/webapp/img/general-3.jpg
+HTTP_REFERER=http://localhost/webapp/
+---
+2014/03/21 12:39:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/browser-cut.png".' in /Applications/MAMP/htdocs/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/framework/web/CWebApplication.php(141): CWebApplication->runController('img/browser-cut...')
+#1 /Applications/MAMP/htdocs/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webapp/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/webapp/img/browser-cut.png
+HTTP_REFERER=http://localhost/webapp/
+---
+2014/03/21 12:39:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/photo-2.jpg".' in /Applications/MAMP/htdocs/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/framework/web/CWebApplication.php(141): CWebApplication->runController('img/photo-2.jpg')
+#1 /Applications/MAMP/htdocs/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webapp/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/webapp/img/photo-2.jpg
+HTTP_REFERER=http://localhost/webapp/
+---
+2014/03/21 12:39:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/photo-1.jpg".' in /Applications/MAMP/htdocs/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/framework/web/CWebApplication.php(141): CWebApplication->runController('img/photo-1.jpg')
+#1 /Applications/MAMP/htdocs/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webapp/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/webapp/img/photo-1.jpg
+HTTP_REFERER=http://localhost/webapp/
+---
+2014/03/21 12:40:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/browser.png".' in /Applications/MAMP/htdocs/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/framework/web/CWebApplication.php(141): CWebApplication->runController('img/browser.png')
+#1 /Applications/MAMP/htdocs/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webapp/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/webapp/img/browser.png
+HTTP_REFERER=http://localhost/webapp/
+---
+2014/03/21 12:40:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/browser-cut.png".' in /Applications/MAMP/htdocs/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/framework/web/CWebApplication.php(141): CWebApplication->runController('img/browser-cut...')
+#1 /Applications/MAMP/htdocs/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webapp/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/webapp/img/browser-cut.png
+HTTP_REFERER=http://localhost/webapp/
+---
+2014/03/21 12:40:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/general-1.jpg".' in /Applications/MAMP/htdocs/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/framework/web/CWebApplication.php(141): CWebApplication->runController('img/general-1.j...')
+#1 /Applications/MAMP/htdocs/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webapp/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/webapp/img/general-1.jpg
+HTTP_REFERER=http://localhost/webapp/
+---
+2014/03/21 12:40:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/general-3.jpg".' in /Applications/MAMP/htdocs/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/framework/web/CWebApplication.php(141): CWebApplication->runController('img/general-3.j...')
+#1 /Applications/MAMP/htdocs/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webapp/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/webapp/img/general-3.jpg
+HTTP_REFERER=http://localhost/webapp/
+---
+2014/03/21 12:40:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/general-2.jpg".' in /Applications/MAMP/htdocs/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/framework/web/CWebApplication.php(141): CWebApplication->runController('img/general-2.j...')
+#1 /Applications/MAMP/htdocs/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webapp/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/webapp/img/general-2.jpg
+HTTP_REFERER=http://localhost/webapp/
+---
+2014/03/21 12:40:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/photo-1.jpg".' in /Applications/MAMP/htdocs/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/framework/web/CWebApplication.php(141): CWebApplication->runController('img/photo-1.jpg')
+#1 /Applications/MAMP/htdocs/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webapp/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/webapp/img/photo-1.jpg
+HTTP_REFERER=http://localhost/webapp/
+---
+2014/03/21 12:40:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/photo-2.jpg".' in /Applications/MAMP/htdocs/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/framework/web/CWebApplication.php(141): CWebApplication->runController('img/photo-2.jpg')
+#1 /Applications/MAMP/htdocs/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webapp/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/webapp/img/photo-2.jpg
+HTTP_REFERER=http://localhost/webapp/
+---
+2014/03/21 12:40:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/imac.png".' in /Applications/MAMP/htdocs/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/framework/web/CWebApplication.php(141): CWebApplication->runController('img/imac.png')
+#1 /Applications/MAMP/htdocs/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/webapp/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/webapp/img/imac.png
+HTTP_REFERER=http://localhost/webapp/
+---
+2014/03/21 12:50:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "blog-post.html".' in /Applications/MAMP/htdocs/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/framework/web/CController.php(270): CController->missingAction('blog-post.html')
+#1 /Applications/MAMP/htdocs/framework/web/CWebApplication.php(282): CController->run('blog-post.html')
+#2 /Applications/MAMP/htdocs/framework/web/CWebApplication.php(141): CWebApplication->runController('site/blog-post....')
+#3 /Applications/MAMP/htdocs/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/webapp/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/webapp/site/blog-post.html
+HTTP_REFERER=http://localhost/webapp/site/index
+---
+2014/03/21 16:21:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index.html".' in /Applications/MAMP/htdocs/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/framework/web/CController.php(270): CController->missingAction('index.html')
+#1 /Applications/MAMP/htdocs/framework/web/CWebApplication.php(282): CController->run('index.html')
+#2 /Applications/MAMP/htdocs/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index.html')
+#3 /Applications/MAMP/htdocs/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/webapp/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/webapp/site/index.html
+HTTP_REFERER=http://localhost/webapp/site/contact
+---
+2014/03/21 18:09:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index.html".' in /Applications/MAMP/htdocs/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/framework/web/CController.php(270): CController->missingAction('index.html')
+#1 /Applications/MAMP/htdocs/framework/web/CWebApplication.php(282): CController->run('index.html')
+#2 /Applications/MAMP/htdocs/framework/web/CWebApplication.php(141): CWebApplication->runController('translate/index...')
+#3 /Applications/MAMP/htdocs/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/webapp/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/webapp/translate/index.html
+HTTP_REFERER=http://localhost/webapp/translate/index
+---
+2014/03/21 19:38:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index.html".' in /Applications/MAMP/htdocs/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/framework/web/CController.php(270): CController->missingAction('index.html')
+#1 /Applications/MAMP/htdocs/framework/web/CWebApplication.php(282): CController->run('index.html')
+#2 /Applications/MAMP/htdocs/framework/web/CWebApplication.php(141): CWebApplication->runController('translate/index...')
+#3 /Applications/MAMP/htdocs/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/webapp/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/webapp/translate/index.html
+HTTP_REFERER=http://localhost/webapp/translate/index
+---

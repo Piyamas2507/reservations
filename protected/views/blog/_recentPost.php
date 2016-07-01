@@ -1,0 +1,2 @@
+<li><?php echo CHtml::link(CHtml::encode($data->title), array('view', 'id'=>$data->slug)); ?>
+<br><span class="text-muted"><small><i class="fa fa-calendar"></i> <?php echo Load::DateFormat($data->create); ?> <i class="fa fa-eye"></i> <?php echo $data->view; ?></small></span></li>
