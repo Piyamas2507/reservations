@@ -35,12 +35,11 @@
   </div>
   <div class="col-sm-5">
     <h2 class="headline first-child first-child-m text-color">
-      <span class="border-color">มหาวิทยาลัยเทคโนโลยีราชมงคลสุวรรณภูมิ</span>
+      <span class="border-color">SunBug</span>
     </h2>
     <p>
-      เลขที่ 19 ถ. อู่ทอง ต. ท่าวาสุกรี อ. พระนครศรีอยุธยา จ. พระนครศรีอยุธยา 13000 <br>
-      โทร: 035-324180<br>
-      แฟกซ์ 035-252393<br>
+      318 หมู่ 15 ต.ขามใหญ่ อ.เมือง จ.อุบลราชธานี 34000<br>
+      โทร: 0966598006<br>
       Email: <a href="mail:indywib@gmail.com">admin</a>
     </p>
     <h2 class="headline text-color">
